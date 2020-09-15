@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 764a00577ebb6a18d88b81857748c81a33adf190 Emma Blott <blott23@gmail.com> 1600179430 +0100	commit (initial): starting files
+764a00577ebb6a18d88b81857748c81a33adf190 043b05a578bf13573ca3f85a658efcc164e30d2a Emma Blott <blott23@gmail.com> 1600179968 +0100	commit: Initial setup
+043b05a578bf13573ca3f85a658efcc164e30d2a 26f5f9cc7ffa62a636db51cdf1ded64f5b372e2e Emma Blott <blott23@gmail.com> 1600180468 +0100	commit: Simplify yatzy chance method
+26f5f9cc7ffa62a636db51cdf1ded64f5b372e2e 89aa72e1a0543b30b9219e93db8355443be611fa Emma Blott <blott23@gmail.com> 1600182355 +0100	commit: Created helper function for number scores
+89aa72e1a0543b30b9219e93db8355443be611fa 9d00ea693570844154833f768b64ad4c491854ea Emma Blott <blott23@gmail.com> 1600182825 +0100	commit: Improved fours function and tests
+9d00ea693570844154833f768b64ad4c491854ea 4fb561c8cdcf0e426f61845349371d9af84a7ee7 Emma Blott <blott23@gmail.com> 1600183059 +0100	commit: Fix four, five & six
+4fb561c8cdcf0e426f61845349371d9af84a7ee7 03c6062c3919b3c8ac1b5470d7af276522cabfc6 Emma Blott <blott23@gmail.com> 1600184477 +0100	commit: Refactor score_pair method
+03c6062c3919b3c8ac1b5470d7af276522cabfc6 0e6a04a115119a40af28620dc77a169677fdbfae Emma Blott <blott23@gmail.com> 1600185706 +0100	commit: Refactor two_pair method
