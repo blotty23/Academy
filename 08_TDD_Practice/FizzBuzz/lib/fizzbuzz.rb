@@ -1,6 +1,6 @@
 def Fizzbuzz(number)
-    if number ==3 
-        return "Fizz"
-    end 
+    
+    return "Fizz" if number ==3 
+    return "Buzz" if number ==5
     number.to_s
 end
