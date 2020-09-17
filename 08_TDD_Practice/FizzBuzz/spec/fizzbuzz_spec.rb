@@ -21,5 +21,8 @@ describe "Fizzbuzz single multiples" do
     it  "given 3 returns Fizz" do
         expect(Fizzbuzz(3)).to eq("Fizz")
     end
+    it  "given 5 returns Buzz" do
+        expect(Fizzbuzz(5)).to eq("Buzz")
+    end
 
 end
