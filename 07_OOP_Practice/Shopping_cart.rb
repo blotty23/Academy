@@ -15,7 +15,6 @@ end
 
 class ShoppingCart
 
-
     def initialize(all_products = [])
         @all_products = all_products
     end

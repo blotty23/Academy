@@ -30,15 +30,34 @@ describe "1 item" do
 
 end
 
-products_list = {
-  hairbrush: Product.new("Hairbrush", 2),
-  coffee: Product.new("coffee", 3)
-}
+
 
 describe "2 item" do
+  products_list = {
+    hairbrush: Product.new("Hairbrush", 2),
+    coffee: Product.new("coffee", 3)
+  }
   it "Empty cart with £2 hairbrush and £3 coffee" do
     cart = ShoppingCart.new([])
     products_list.each {|key, value| cart.AddItem(value)}
     expect(cart.total).to eq(5)
   end
 end
+
+
+describe "5 item" do
+  products_list = {
+    hairbrush: Product.new("Hairbrush", 2),
+    coffee: Product.new("Coffee", 3),
+    falafel: Product.new("Falafel", 4),
+    orange_juice:  Product.new("Orange juice", 1),
+    fresh_coconut_water: Product.new("Fresh coconut water", 5)
+  }
+  it "Cart with 5 items calcutes total" do
+    cart = ShoppingCart.new([])
+    products_list.each {|key, value| cart.AddItem(value)}
+    expect(cart.total).to eq(15)
+  end
+end
+
+
