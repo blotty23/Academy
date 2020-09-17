@@ -3,6 +3,14 @@ class Product
         @name = name
         @price = price
     end
+
+    def give_price
+        return @price
+    end
+
+    def give_name
+        return @name
+    end
 end
 
 class ShoppingCart
@@ -10,16 +18,19 @@ class ShoppingCart
     #   @products = []
     # end
 
-    def intialize(products = [])
-        @products = products
+    def initialize(all_products = [])
+        @all_products = all_products
     end
 
     def total
-        0
+        if @all_products == [] 
+            return 0
+        end
+        @all_products[0].give_price
     end 
 
     def AddItem(product)
-       ShoppingCart.new(@products.push(product))
+       ShoppingCart.new(@all_products.push(product))
     end
 end 
 

@@ -13,10 +13,19 @@ describe "Empty cart" do
 end
 
 describe "1 item" do
+ 
   it "Empty cart with hairbrush will cost £2" do
     cart = ShoppingCart.new([])
-    product = Product.new("Hairbrush",2)
-    cart.AddItem(product)
+    hairbrush_product = Product.new("Hairbrush",2)
+    cart.AddItem(hairbrush_product)
     expect(cart.total).to eq(2)
   end
+
+  it "Empty cart with coffee will cost £3" do
+    cart = ShoppingCart.new([])
+    coffee_product = Product.new("coffee", 3)
+    cart.AddItem(coffee_product)
+    expect(cart.total).to eq(3)
+  end
+
 end
