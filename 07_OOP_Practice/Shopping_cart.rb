@@ -19,6 +19,14 @@ class ShoppingCart
         @all_products = all_products
     end
 
+    def show_products_in_cart
+        @all_products.each  do |item|
+
+            # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            puts "SORT THIS OUT!!~~~~~~~~~~~~~ #{item.inspect}"
+        end
+    end 
+
     def total
         if @all_products == [] 
             return 0
@@ -30,11 +38,17 @@ class ShoppingCart
         return sum
     end 
 
-    def AddItem(product)
+    def add_item(product)
        ShoppingCart.new(@all_products.push(product))
+    end
+
+    def remove_item(product)
+        0
     end
 end 
 
+
+# cart.all_products = [Product.new("aure"), Product.new]
 
 
 
