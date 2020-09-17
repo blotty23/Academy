@@ -23,4 +23,7 @@ describe "Fibonacci sequence" do
     it "gives a 0 for the first position" do
         expect(fibonacci(1)).to eq(0)
     end
+    it "gives 1 for the 2nd position" do
+        expect(fibonacci(2)).to eq(1)
+    end 
 end
