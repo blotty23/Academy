@@ -10,6 +10,9 @@ describe "Fizzbuzz" do
         expect(Fizzbuzz(1)).to eq("1")
     end
     it "given 2 returns 2" do
-        expect(Fizzbuzz(2).to eq("2"))
+        expect(Fizzbuzz(2)).to eq("2")
     end 
+    it "given 4 returns 4" do
+        expect(Fizzbuzz(4)).to eq("4")
+    end
 end
