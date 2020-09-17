@@ -14,9 +14,7 @@ class Product
 end
 
 class ShoppingCart
-    # def initialize()
-    #   @products = []
-    # end
+
 
     def initialize(all_products = [])
         @all_products = all_products
@@ -41,6 +39,3 @@ end
 
 
 
-# Hairbrush = Product.new("Hairbrush", 2)
-# Shoes = Product.new("Shoes", 4)
-# Hat = Product.new("Hat", 6)
