@@ -26,4 +26,5 @@ describe "Fibonacci sequence" do
     it "gives 1 for the 2nd position" do
         expect(fibonacci(2)).to eq(1)
     end 
+    
 end
