@@ -14,7 +14,7 @@ end
 
 describe "1 item" do
  
-  it "Empty cart with hairbrush will cost £2" do
+  it "Can add an item" do
     cart = ShoppingCart.new([])
     hairbrush_product = Product.new("Hairbrush",2)
     cart.AddItem(hairbrush_product)
@@ -29,8 +29,6 @@ describe "1 item" do
   end
 
 end
-
-
 
 describe "2 item" do
   products_list = {
@@ -60,4 +58,19 @@ describe "5 item" do
   end
 end
 
+describe "5 items" do
+  products_list = {
+    hairbrush: Product.new("Hairbrush", 2.5),
+    coffee: Product.new("Coffee", 3),
+    falafel: Product.new("Falafel", 4),
+    orange_juice:  Product.new("Orange juice", 1),
+    fresh_coconut_water: Product.new("Fresh coconut water", 5)
+  }
+  it "Cart with 5 items including float price calcutes total" do
+    cart = ShoppingCart.new([])
+    products_list.each {|key, value| cart.AddItem(value)}
+    expect(cart.total).to eq(15.50)
+  end
+end
 
+describe "adding and removing items" do
