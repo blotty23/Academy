@@ -26,7 +26,11 @@ class ShoppingCart
         if @all_products == [] 
             return 0
         end
-        @all_products[0].give_price
+        sum = 0
+        @all_products.each do|each_product|
+            sum += each_product.give_price
+        end
+        return sum
     end 
 
     def AddItem(product)

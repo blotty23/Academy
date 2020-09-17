@@ -29,3 +29,14 @@ describe "1 item" do
   end
 
 end
+
+describe "2 item" do
+  it "Empty cart with £2 hairbrush and £3 coffee" do
+    cart = ShoppingCart.new([])
+    hairbrush_product = Product.new("Hairbrush",2)
+    coffee_product = Product.new("coffee", 3)
+    cart.AddItem(hairbrush_product)
+    cart.AddItem(coffee_product)
+    expect(cart.total).to eq(5)
+  end
+end
