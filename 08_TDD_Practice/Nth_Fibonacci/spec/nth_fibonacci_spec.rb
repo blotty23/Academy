@@ -29,5 +29,8 @@ describe "Fibonacci sequence" do
     it "gives 1 for the 3rd position" do 
         expect(fibonacci(3)).to eq(1)
     end
+    it "gives 2 for the 4th position" do
+        expect(fibonacci(4)).to eq(2)
+    end
 
 end
