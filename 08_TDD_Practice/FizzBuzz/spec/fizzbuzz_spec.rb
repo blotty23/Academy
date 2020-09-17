@@ -34,4 +34,11 @@ describe "FizzBuzz multiples of 3 OR 5" do
     it "returns Buzz if given multiple of 3" do
         expect(Fizzbuzz(10)).to eq("Buzz")
     end 
+    
+end
+
+describe "Fizzbuzz for multiples of 3 AND 5" do 
+    it "returns FizzBuzz if given multiple of 3 and 5" do
+        expect(Fizzbuzz(15)).to eq("FizzBuzz")
+    end
 end
