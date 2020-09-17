@@ -17,7 +17,7 @@ describe "Fizzbuzz_simple" do
     end
 end
 
-describe "Fizzbuzz 3 or 5 do
+describe "Fizzbuzz 3 or 5" do
     it  "given 3 returns Fizz" do
         expect(Fizzbuzz(3)).to eq("Fizz")
     end
@@ -27,4 +27,8 @@ describe "Fizzbuzz 3 or 5 do
 
 end
 
-describe "FizzBuzz no"
+describe "FizzBuzz multiples of 3 OR 5" do
+    it "returns Buzz if given multiple of 3" do
+        expect(Fizzbuzz(9)).to eq("Fizz")
+    end 
+end
