@@ -7,6 +7,7 @@ describe Mumble do
                 expect(described_class.new.mumble_letters("")).to eq("")
             end
         end
+
         context "given one letter" do
             it "capitalizes and returns it" do
                 expect(described_class.new.mumble_letters("a")).to eq("A")
@@ -16,6 +17,13 @@ describe Mumble do
             end
         end
 
+        context "given several letters" do
+            it "mumbles the letters" do
+                expect(described_class.new.mumble_letters("ab")).to eq("A-Bb")
+                expect(described_class.new.mumble_letters("bcd")).to eq("B-Cc-Ddd")
+                expect(described_class.new.mumble_letters("bcde")).to eq("B-Cc-Ddd-Eeee")
+            end
+        end
 
     end  
 end
