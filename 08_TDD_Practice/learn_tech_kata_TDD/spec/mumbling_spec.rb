@@ -12,6 +12,7 @@ describe Mumble do
                 expect(described_class.new.mumble_letters("a")).to eq("A")
                 expect(described_class.new.mumble_letters("b")).to eq("B")
                 expect(described_class.new.mumble_letters("c")).to eq("C")
+                expect(described_class.new.mumble_letters("C")).to eq("C")
             end
         end
 
