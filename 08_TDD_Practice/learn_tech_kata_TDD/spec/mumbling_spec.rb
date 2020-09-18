@@ -22,7 +22,14 @@ describe Mumble do
                 expect(described_class.new.mumble_letters("ab")).to eq("A-Bb")
                 expect(described_class.new.mumble_letters("bcd")).to eq("B-Cc-Ddd")
                 expect(described_class.new.mumble_letters("bcde")).to eq("B-Cc-Ddd-Eeee")
+                expect(described_class.new.mumble_letters("xy")).to eq("X-Yy")
+                expect(described_class.new.mumble_letters("td")).to eq("T-Dd")
+                expect(described_class.new.mumble_letters("bcs")).to eq("B-Cc-Sss")
+                expect(described_class.new.mumble_letters("bcxe")).to eq("B-Cc-Xxx-Eeee")
+
             end
+
+
         end
 
     end  
