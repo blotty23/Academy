@@ -11,6 +11,7 @@ describe Mumble do
             it "capitalizes and returns it" do
                 expect(described_class.new.mumble_letters("a")).to eq("A")
                 expect(described_class.new.mumble_letters("b")).to eq("B")
+                expect(described_class.new.mumble_letters("c")).to eq("C")
             end
         end
 
