@@ -38,4 +38,7 @@ describe "Fibonacci sequence" do
     it "gives 3 for the 5th position" do 
         expect(fibonacci(5)).to eq(3)
     end 
+    it "gives 13 for the 7th position" do 
+        expect(fibonacci(5)).to eq(3)
+    end 
 end
