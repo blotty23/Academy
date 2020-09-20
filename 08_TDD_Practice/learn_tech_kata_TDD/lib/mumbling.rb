@@ -2,17 +2,17 @@ class Mumble
 
     def mumble_letters(string)
 
-        chars = string.split('')
+        # chars = string.split('')
 
-        return chars.map.with_index { |char, i| (char*i).capitalize }.join('-') 
-
+        # return chars.map.with_index { |char, i| (char*i).capitalize }.join('-') 
+        return string if string.length == 0 
         # if string.length == 2
-        #     result = string[0].capitalize
-        #     for i in 1...2
-        #         result << "-" << string[i].capitalize
-        #         result << string[i]
-        #     end
-        #     return result
+        result = string[0].capitalize
+        for i in 1...string.length 
+            result << "-" << string[i].capitalize
+            result << string[i]*i
+        end
+        return result
         # end
 
         # if string.length == 3
