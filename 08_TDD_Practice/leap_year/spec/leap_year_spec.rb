@@ -12,10 +12,17 @@ describe "LeapYear" do
         end 
     end 
 
-    atypical_common_years = [1900,1800]
+    atypical_common_years = [1900,1800,1000]
     atypical_common_years.each do |year|
         it "Atypical common year: returns false when given #{year}" do
             expect(LeapYear.new.is_leap_year?(year)).to eq(false)
+        end 
+    end 
+
+    atypical_leap_years = [2000]
+    atypical_leap_years.each do |year|
+        it "Atypical leap year: returns true when given #{year}" do
+            expect(LeapYear.new.is_leap_year?(year)).to eq(true)
         end 
     end 
 end 
